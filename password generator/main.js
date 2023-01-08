@@ -7,6 +7,7 @@ const symbolsEl = document.getElementById('symbols');
 const generateEl = document.getElementById('generate');
 const clipboard = document.getElementById('clipboard');
 const lengthSlider = document.querySelector('#length');
+const strengthWord = document.querySelector('.Strength-Word');
 
 const updateSlider = function(){
 	document.querySelector('.password span').innerText = lengthSlider.value;
