@@ -28,6 +28,13 @@ generateEl.addEventListener('click', function(){
 	const hasLower = lowercaseEl.checked;
 	const hasNumber = numbersEl.checked;
 	const hasSymbol = symbolsEl.checked;
+	
+	const arr = [
+	 uppercaseEl.checked,
+	 lowercaseEl.checked,
+	 numbersEl.checked,
+	 symbolsEl.checked
+	]
 
 	resultEl.innerText = generatePassword(length, hasUpper, hasLower, hasNumber, hasSymbol);
 	var count = 0;
