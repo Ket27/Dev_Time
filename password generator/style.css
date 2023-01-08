@@ -30,6 +30,12 @@ input[type=checkbox] {
 	margin-right: 0;
 }
 
+.setting .password {
+	display : flex;
+	width : 100%;
+	justify-content: space-between;
+}
+
 .container {
 	background-color: #23235B;
 	box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
@@ -84,6 +90,31 @@ input[type=checkbox] {
 	justify-content: space-between;
 	align-items: center;
 	margin: 15px 0;
+}
+
+.flex-row .scale{
+	display : flex;
+	align-items: center;
+	justify-content: space-between;	
+}
+
+.Setting .Strength{
+	font-size :x-large;
+}
+
+.Setting {
+	background-color: rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	font-size: 18px;
+	letter-spacing: 1px;
+	padding: 12px 10px;
+	height: 40px;
+	width: 100%;
+	font-size :x-large;
+	justify-content: space-between;	
 }
 
 @media screen and (max-width: 400px) {
