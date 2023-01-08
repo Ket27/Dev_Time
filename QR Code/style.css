@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin : none;
+}
+
+body{
+    background-color: lightgray;
+    display : flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 10%;
+}
+
+html {
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+}
+
+.container{
+    background-color: white;
+    width :21.33rem;
+    padding : 1rem;
+    border-radius: 10px;
+    box-shadow: 0 7px 16px  #777;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.container .heading{
+    color : darkblue;
+    text-align: center;
+    margin: 1.3rem 0;
+}
+
+.container .para{
+    color : grey;
+    text-align:center ;
+    margin-bottom: 1.3rem;
+}
+
