@@ -30,6 +30,38 @@ generateEl.addEventListener('click', function(){
 	const hasSymbol = symbolsEl.checked;
 
 	resultEl.innerText = generatePassword(length, hasUpper, hasLower, hasNumber, hasSymbol);
+	var count = 0;
+	if(length > 12){
+		strengthWord.innerText = "Strong";
+		strengthWord.style.color = "green";
+	}
+	else{
+		var count = 0;
+		for(let i =0; i<4; i++){
+			if(arr[i] == true){
+				count++;
+			}
+		}
+
+		if(count == 4){
+			strengthWord.innerText = "Strong";
+		}
+	
+		else if(count == 2){
+			strengthWord.innerText = "Weak";
+			strengthWord.style.color = "yellow"
+		}
+	
+		else if(count == 3){
+			strengthWord.innerText = "Medium";
+			strengthWord.style.color = "yellow"
+		}
+	
+		else{
+			strengthWord.innerText = "Too Weak";
+			strengthWord.style.color = "red";
+		}
+	}
 })
 
 function generatePassword(length, upper, lower, number, symbol){
