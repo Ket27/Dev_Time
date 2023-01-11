@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin : 0;
+}
+
+body{
+    background-color: rgb(29, 29, 32);
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.container{
+    display : flex;
+    background-color: hsl(213, 19%, 18%);
+    justify-content: center;
+    align-items:center;
+    width:25%;
+    height:375px;
+    border-radius: 30px;
+}
+
+.firstcontainer .image-star{
+    display:flex;
+    background-color: grey;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height:40px;
+    margin-bottom: 2em;
+    border-radius: 50%;
+}
+
+.firstcontainer img{
+    width:17px;
+    height:17px;
+}
+
+.firstcontainer h1{
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:2em;
+    margin-bottom: 25px;
+}
+
+.firstcontainer .content{
+    margin-bottom: 20px;
+}
+
+.firstcontainer p{
+    color:grey;
+    line-height: 20px;
+}
+
+.ratings{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ratings button{
+    background-color:grey;
+    color:white;
+    border-radius: 50%;
+    width:40px;
+    height: 40px;
+    border-color: hsl(213, 19%, 18%);
+}
+
+.btn{
+    width:100%;
+    height:35px;
+    color:white;
+    letter-spacing: 1px;
+    background-color: orange;
+    border-radius: 25px;
+    border-color:hsl(213, 19%, 18%);
+}
+
+.rating:hover{
+    background-color:orange;
+}
+
+.rating:focus{
+    background-color: aliceblue;
+    color:black;
+}
+
+.btn:hover{
+    background-color: aliceblue;
+    color:orange;
+}
+
+/* thank you page*/
+
+.thanking .image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.thanking img{
+    width:165px;
+    height:100px;
+}
+
+.response{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    color:white;
+    width:220px;
+    margin-left:48px;
+    height:30px;
+    border-radius: 10px;
+    margin-bottom:30px;
+}
+
+.thanking h1{
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:2em;
+    margin-left:65px;   
+    margin-bottom:20px;
+}
+
+.thanking .weapp p{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    color:gray;
+    margin-bottom:20px;
+}
+
+.hidden{
+    display: none;
+}
