@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css" />
+    <title>interactive rating component</title>
+</head>
+<body>
+    <div class ="container">
+        <div class = "firstcontainer">
+            <div class ="image-star">
+                <img src = "star.png" alt="" height="25px" width="25px"/>
+            </div>
+            <h1>How did we do?</h1>
+            <div class = "content">
+                <p>Please let us know how we did with your support<br>request. All feedback is appreciated to help us<br>improve our offering!</p>
+            </div>
+            <div class ="ratings">
+                <button class ="rating">1</button>
+                <button class ="rating">2</button>
+                <button class ="rating">3</button>
+                <button class ="rating">4</button>
+                <button class ="rating">5</button>
+            </div>
+            <button class = "btn" id = "submit">
+                SUBMIT
+            </button>
+        </div>
+
+        <div class = "thanking hidden">
+            <div class="image">
+                <img src="flower.png" alt=""/>
+            </div>
+            <div class = "response">
+                <p>You selected <span class="num"> 0 </span> out of 5</p>
+            </div>
+            <h1>Thank you!</h1>
+            <div class = "weapp">
+                <p>We appreciate you taking the time to give a rating.<br>If you ever need more support, don't hesitate to<br>get in touch!</p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
