@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <title>Countries Api</title>
+</head>
+<body>
+    <div class = "container">
+        <div class = "header">
+            <div id="head"><h2>Where in the world?</h2></div>
+            <div id="mode">               
+                <i class="bi bi-moon-fill" id="toggle"></i>
+                <p id="dark">Dark Mode</p>
+            </div>
+        </div>
+
+        <div class = "search">
+            <div class = "write">
+                <input type = "text" placeholder="Search for a country..." width = 50% height = "10" class="textsearch">
+            </div>
+            <div class = "filter">
+            <p>Filter by Region</p>
+                <select class = "filter-by-region">
+                    <option value = "All">All</option>
+                    <option value = "Africa">Africa</option>
+                    <option value ="America">America</option>
+                    <option value = "Asia">Asia</option>
+                    <option value= "Europe">Europe</option>
+                    <option value ="Oceania">Oceania</option>
+                </select>
+            </div>
+        </div>
+
+        <div class = "country">
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
