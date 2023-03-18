@@ -4,6 +4,10 @@ const body = document.querySelector("body");
 const country = document.querySelector('.country')
 const search = document.querySelector('.textsearch')
 const filter = document.querySelector('.filter-by-region')
+const particular = document.querySelector(".particular");
+const second = document.querySelector(".container-second")
+const show = document.querySelector(".hidden-second");
+const hidden = document.querySelector(".hidden");
 
 toggle.addEventListener('click', function(){
     this.classList.toggle('bi-moon-fill')
@@ -47,6 +51,9 @@ function showCountry(data){
         </div>`
 
     country.appendChild(countries);
+    countries.addEventListener("click", () => {
+        showCountryDetail(data);
+    })
 }
 
 const country_name = document.getElementsByClassName('country-name')
@@ -74,3 +81,31 @@ filter.addEventListener('change', function(){
     })
 })
 
+function showCountryDetail(data){
+    second.classList.toggle('show');
+    hidden.style.display = "none";
+    const onlyCountry = document.createElement('div');
+    onlyCountry.classList.add('part-count');
+    onlyCountry.innerHTML = `
+        <div class = "country-flag">
+            <img src =${data.flag}>
+        </div>
+        <div class = "country-all-info">
+            <h3>${data.name}</h3>
+            <div class = "cont">
+                <div class = "cont-left">
+                    <p><strong>Population : </strong>${data.population}</p>
+                    <p><strong>Region : </strong>${data.region}</p>
+                    <p><strong>Capital : </strong>${data.capital}</p>
+                    <p><strong>Sub-Region : </strong>${data.subregion}</p>
+                </div>
+                <div class = "cont-right">
+                    <p><strong>Currency : </strong>${data.currencies.map(elem => elem.name)}</p>
+                    <p><strong>Languages : </strong>${data.languages.map(elem => elem.name)}</p>
+                    <p><strong>Native Name : </strong>${data.nativeName}</p>
+                </div>
+            </div>
+        </div>`
+
+    particular.appendChild(onlyCountry);
+}
