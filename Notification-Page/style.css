@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+*{
+    box-sizing: border-box;
+    margin : 0;
+}
+
+body{
+    min-height: 100vh;
+    display : flex;
+    justify-content: center;
+    background-color: hsl(210, 60%, 98%);
+}
+
+.container{
+    background-color: hsl(0, 0%, 100%);
+    width:700px;
+    margin-top : 50px;
+    margin-bottom: 50px;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 0px lightgray;
+}
+
+.header{
+    display : flex;
+    justify-content: space-between;
+}
+
+.notif_box{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width : 155px;
+}
+
+#number{
+    display : flex;
+    justify-content: center;
+    align-items:center;
+    background-color: hsl(219, 85%, 26%);
+    width:20px;
+    height:20px;
+    margin-left:5px;
+    color:hsl(0, 0%, 100%);
+    border-radius: 5px;
+}
+
+#readnot {
+    cursor: pointer;
+  }
+  
+#readnot:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+p {
+  color: hsl(219, 12%, 42%);
+}
+
+main{
+  margin-top: 30px;
+}
+
+.chat{
+  display : flex;
+  margin-top : 10px;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.unread{
+  background-color: hsl(211, 68%, 94%) !important;
+}
+
+.unread p:first-of-type::after{
+  content :" ";
+  background-color: hsl(1, 90%, 64%);
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+main img{
+  width : 50px;
+}
+
+strong{
+  color: hsl(224, 21%, 14%);
+  cursor: pointer;
+}
+
+#club{
+  color : hsl(219, 85%, 26%);
+}
+
+.time{
+  color: hsl(219, 12%, 42%);
+}
+
+.message{
+  display: flex;
+  align-items: center;
+  border : 1px solid hsl(211, 68%, 94%);
+  padding : 0.8rem;
+  margin-top : 10px;
+  width : 550px;
+  cursor : pointer;
+}
+
+.message:hover{
+  background-color: hsl(211, 68%, 94%);
+}
+
