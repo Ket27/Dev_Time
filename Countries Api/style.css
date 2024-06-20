@@ -1,135 +1,159 @@
-*{
+/* Global styles */
+* {
     box-sizing: border-box;
-    margin : 0;
-}
-
-.container .header{
-    display : flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container */
+  .container {
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 5px;
+    }
+  }
+  
+  /* Header */
+  .container .header {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left : 70px;
-    padding-right: 70px;
-    height: 70px;
-    box-shadow: 0px 0px 5px lightgray;
-
-}
-
-.header #mode{
-    display : flex;
-    justify-content:flex-end;
+    padding: 1rem;
+  }
+  
+  .header #mode {
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    width:200px;
-    gap:5px;
-}
-
-.header i{
-    cursor:pointer;
-}
-
-/*text search */
-.container .search{
-    display :flex;
+    width: 50%; /* Adjust width for smaller screens */
+  }
+  
+  .header i {
+    cursor: pointer;
+  }
+  
+  /* Text search */
+  .container .search {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     height: 140px;
-    padding-left: 70px;
-    padding-right : 70px;
-}
-
-input[type ="text"]{
-    width:400px;
-    height:40px;
+    padding: 1rem;
+  }
+  
+  input[type="text"] {
+    width: 80%; /* Responsive width */
+    height: 40px;
     border-color: lightgray;
-}
-
-/* filter by region */
-.search .filter{
-    display:flex;
-    align-items:center;
+    padding: 5px;
+  }
+  
+  /* Filter by region */
+  .search .filter {
+    display: flex;
+    align-items: center;
     justify-content: center;
     gap: 10px;
-    height : 40px;
-    width:275px;
-    box-shadow: 0px 0px 5px 5px lightgray;
-}
-
-/* countries */
-.container .country{
-    display:flex;
-    justify-content:flex-start;
-    margin-left: 70px;
-    width : 1360px;
-    align-items:center;
-    flex-wrap :wrap;
-    gap:10px;
-}
-.container .countries{
-    display  : flex;
-    justify-content:center;
+    height: 40px;
+    width: 275px;
+    box-shadow: 0px 0px 5px lightgray;
+    padding: 5px;
+  }
+  
+  /* Countries */
+  .container .country {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1rem;
+    width: 100%; /* Full width for responsiveness */
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .container .countries {
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-left: 100px;
     padding-bottom: 20px;
     box-shadow: 0px 0px 5px lightgray;
-    width : 200px;
-}
-
-.countries img{
-    width:200px;
-    height:133.33px;
-}
-
-.country-info h5{
+    width: 200px;
+  }
+  
+  .countries img {
+    width: 200px;
+    height: 133.33px;
+  }
+  
+  .country-info h5 {
     font-size: 20px;
     margin-top: -2px;
     margin-bottom: 9px;
-}
-
-.hidden-second{
-    display : none;
-}
-
-.container-second{
-    display : flex;
+  }
+  
+  .countries .country-name {
+    cursor: pointer;
+  }
+  
+  /* Hidden second container */
+  .hidden-second {
+    display: none;
+  }
+  
+  /* Container second */
+  .container-second {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width : 600px;
-    margin-left : 450px;
+    width: 600px;
+    margin: 0 auto; /* Center horizontally */
     margin-top: 150px;
-}
-
-.container-second img{
-    width : 500px;
-}
-
-h3{
+  }
+  
+  .container-second img {
+    width: 500px;
+  }
+  
+  /* Country details */
+  h3 {
     margin-right: 100px;
     margin-bottom: 20px;
-    font-size:xx-large;
-}
-
-.cont{
-    display : flex;
+    font-size: xx-large;
+  }
+  
+  .cont {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     margin-bottom: 30px;
     margin-top: 50px;
-    width : 450px;
-}
-
-.cont-right{
+    width: 100%; /* Full width for smaller screens */
+  }
+  
+  .cont-right {
     margin-right: 50px;
-}
-
-.cont-left{
+  }
+  
+  .cont-left {
     margin-left: -50px;
-}
-
-.country-all-info{
-    margin-left: 70px;
-    display:flex;
+  }
+  
+  .country-all-info {
+    margin-left: 1rem;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+  }
+  
